@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face { /* Importation de la police de caractères du site */
+    font-family: "chivo";
+    src: url("../font/Chivo-Black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "chivo";
+}
+
+.logo_site { /* Classe du logo du site */
+    height: 75px;
+    padding-top: 7.5px;
+    float: left;
+}
+
+.langue { /* Classe du bouton pour changer la langue */
+    float: right;
+    width: 45px;
+    margin-right: 50px;
+    transform: translate(0, -30px);
+    border: solid 5px transparent;
+    border-radius: 5px;
+}
+
+.langue:hover {
+    transition: border 0.3s ease;
+    border: solid 5px #FFFFFF;
+}
+
+nav { /* Menu nav qui sert de header */
+    position: fixed; /* Sert à faire en sorte que le menu reste toujours visible en déroulant la page */
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: #0F8389;
+    height: 92.5px;
+    width: 100%;
+    font-size: 125%;
+    z-index: 10;
+}
+
+nav li {
+    display: inline-block;
+    padding-top: 35px;
+    padding-right: 70px;
+}
+
+a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: black;
+}
+
+.on_accueil {
+    color: #FFFFFF;
+}
+
+.on_accueil:hover {
+    transition: color 0.3s ease;
+    color: #a1a1a1;
+}
+
+nav a:hover {
+    transition: color 0.3s ease;
+    color: #FFFFFF;
+}
+
+article {
+    width: 1150px;
+    margin: auto;
+    margin-top: 105px;
+}
+
+article div {
+    display: flex; /* Faire en sorte que tous les blocs s'affiche en ligne */
+}
+
+.compartiment {
+    display: block;
+    width: 360px;
+    height: auto;
+    border: solid 1px #000000;
+    border-radius: 8px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #D9D9D9;
+}
+
+.compartiment img {
+    object-fit: cover;
+    border-bottom: solid 1px #000000;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin: 7px;
+}
+
+p {
+    text-align: justify;
+    margin: 10px;
+}
+
+article a {
+    color: blue;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #0F8389;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a:hover {
+    transition: color 0.3s ease;
+    color: #FFFFFF;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 425px)
+and (max-device-height: 815px)
+and (orientation: portrait) {
+    
+    nav::before {
+        content: "MENU";
+    }
+    
+    nav { 
+        position: relative;
+        display: block;
+        top: 0;
+        left: 0;
+        text-align: center;
+        background-color: #0F8389;
+        height: 92.5px;
+        font-size: 125%;
+    }
+    
+    nav:hover {
+        li {
+            display: block;
+        }
+    }
+
+    nav li {
+        display: none;
+        padding: 0;
+    }
+    
+    article div {
+        display: block;
+    }
+}

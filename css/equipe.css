@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "chivo";
+    src: url("../font/Chivo-Black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "chivo";
+}
+
+.logo_site {
+    height: 75px;
+    padding-top: 7.5px;
+    float: left;
+}
+
+.langue {
+    float: right;
+    width: 40px;
+    margin-right: 50px;
+    transform: translate(0, -30px);
+    border: solid 5px transparent;
+    border-radius: 5px;
+}
+
+.langue:hover {
+    transition: border 0.3s ease;
+    border: solid 5px #FFFFFF;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: #0F8389;
+    height: 92.5px;
+    width: 100%;
+}
+
+nav li {
+    display: inline-block;
+    padding-top: 30px;
+    padding-right: 70px;
+    font-size: 50%;
+    font-size: 125%;
+}
+
+a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: black;
+}
+
+.on_equipes {
+    transition: color 0.3s ease;
+    color: #FFFFFF;
+}
+
+.on_equipes:hover {
+    transition: color 0.3s ease;
+    color: #a1a1a1;
+}
+
+a:hover {
+    transition: color 0.3s ease;
+    color: #FFFFFF;
+}
+
+article {
+    margin-top: 100px;
+}
+
+/*Permet de faire le cadre des pays'*/
+.Pays{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: 4px solid;
+    border-radius: 8px;
+    background-color: #D9D9D9;
+}
+
+/*Permet de faire les boutons'*/
+.bouton {
+    font-family: "chivo";
+    display: block;
+    font-size: 20px;
+    width: 130px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid;
+    text-align: center;
+    line-height: 50px; 
+}
+
+
+/*Pays avec 11 lettres*/
+#SdS{
+    height: 50px;
+    width: 200px;
+}
+/*Pays avec 10 lettres*/
+#USA{
+    height: 50px;
+    width: 140px;
+}
+/*Pays avec 9 lettres*/
+#All, #Aus, #Porto{
+    height: 50px;
+    width: 130px;
+}
+/*Pays avec 7 lettres*/
+#Esp{
+    height: 50px;
+    width: 110px;
+}
+/*Pays avec 6 lettres*/
+#Bre, #Can, #Fr, #Ser{
+    height: 50px;
+    width: 100px;
+}
+/*Pays avec 5 lettres*/
+#Gre, #Jap{
+    height: 50px;
+    width: 90px;
+}
+
+/*Changer la couleur du  bouton du le Japon, le Canada et le Porto Rico en survole.*/
+.boutonJap, .boutonCan, .boutonPor {
+    transition: color 0.3s ease;
+    color: black;
+}
+
+.boutonJap:hover,.boutonCan:hover, .boutonPor:hover {
+    transition: background-color 0.3s ease,color 0.3s ease;
+    color: white;
+    background-color: red;
+    border-color: black;
+}
+
+a:hover {
+    transition: color 0.3s ease;
+    color: white;
+}
+
+/*Changer la couleur du  bouton de l'Allemagne en survole.*/
+.boutonAll {
+    transition: color 0.3s ease;
+    color: black;
+}
+
+.boutonAll:hover {
+    transition: background-color 0.3s ease,color 0.3s ease;
+    color: white;
+    background-color: #e09402;
+    border-color: black;
+}
+
+a:hover {
+    transition: color 0.3s ease;
+    color: white;
+}
+
+/*Changer la couleur du  bouton de l'Australie en survole.*/
+.boutonAus {
+    transition: color 0.3s ease;
+    color: black;
+}
+
+.boutonAus:hover {
+    transition: background-color 0.3s ease,color 0.3s ease;
+    color: white;
+    background-color: #0F8389;
+    border-color: black;
+}
+
+a:hover {
+    transition: color 0.3s ease;
+    color: white;
+}
+
+/*Changer la couleur du  bouton du Brésil en survole.*/
+.boutonBre {
+    transition: color 0.3s ease;
+    color: black;
+}
+
+.boutonBre:hover {
+    transition: background-color 0.3s ease,color 0.3s ease;
+    color: black;
+    background-color: #c1c806;
+    border-color: black;
+}
+
+a:hover {
+    transition: color 0.3s ease;
+    color: white;
+}
+
+/*Changer la couleur du  bouton de l'Espagne en survole.*/
+.boutonEsp {
+    transition: color 0.3s ease;
+    color: black;
+}
+
+.boutonEsp:hover {
+    transition: background-color 0.3s ease,color 0.3s ease;
+    color: black;
+    background-color: yellow;
+    border-color: black;
+}
+
+a:hover {
+    transition: color 0.3s ease;
+    color: white;
+}
+
+/*Changer la couleur du  bouton des État-Unis et de la Serbie en survole.*/
+.boutonSer, .boutonUSA {
+    transition: color 0.3s ease;
+    color: black;
+}
+
+.boutonSer:hover, .boutonUSA:hover {
+    transition: background-color 0.3s ease,color 0.3s ease;
+    color: white;
+    background-color: blue;
+    border-color: black;
+}
+
+a:hover {
+    transition: color 0.3s ease;
+    color: white;
+}
+
+/*Changer la couleur du  bouton de la France et de la Grèce en survole.*/
+.boutonFr, .boutonGre {
+    transition: color 0.3s ease;
+    color: black;
+}
+
+.boutonFr:hover, .boutonGre:hover {
+    transition: background-color 0.3s ease,color 0.3s ease;
+    color: white;
+    background-color: #1b47d1;
+    border-color: black;
+}
+
+a:hover {
+    transition: color 0.3s ease;
+    color: white;
+}
+
+/*Changer la couleur du  bouton du Soudan du Sud en survole.*/
+.boutonSdS {
+    transition: color 0.3s ease;
+    color: black;
+}
+
+.boutonSdS:hover {
+    transition: background-color 0.3s ease,color 0.3s ease;
+    color: white;
+    background-color: green;
+    border-color: black;
+}
+
+a:hover {
+    transition: color 0.3s ease;
+    color: white;
+}
+
+footer {
+    background-color: #0F8389;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+footer a:hover {
+    transition: color 0.3s ease;
+    color: #FFFFFF;
+}

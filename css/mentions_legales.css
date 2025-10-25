@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "chivo";
+    src: url("../font/Chivo-Black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "chivo";
+}
+
+.logo_site {
+    height: 75px;
+    padding-top: 7.5px;
+    float: left;
+}
+
+.langue {
+    float: right;
+    width: 45px;
+    margin-right: 50px;
+    transform: translate(0, -65px);
+    border: solid 5px transparent;
+    border-radius: 5px;
+}
+
+.langue:hover {
+    transition: border 0.3s ease;
+    border: solid 5px #FFFFFF;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: #0F8389;
+    height: 92.5px;
+    width: 100%;
+    font-size: 125%;
+    z-index: 10;
+}
+
+nav li {
+    display: inline-block;
+    padding-top: 70px;
+    padding-right: 70px;
+    transform: translate(0, -35px);
+}
+
+a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: black;
+}
+
+.on_accueil {
+    color: #FFFFFF;
+}
+
+.on_accueil:hover {
+    transition: color 0.3s ease;
+    color: #a1a1a1;
+}
+
+nav a:hover {
+    transition: color 0.3s ease;
+    color: #FFFFFF;
+}
+
+article {
+    width: 1150px;
+    margin: auto;
+    margin-top: 185px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 200%;
+    margin: 100px;
+    transform: translate(0, 50px);
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+}
+
+article a {
+    color: blue;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #0F8389;
+    text-align: center;
+    padding: 15px;
+    margin-top: 11px;
+}
+
+footer a:hover {
+    transition: color 0.3s ease;
+    color: #FFFFFF;
+}

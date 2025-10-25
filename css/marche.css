@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+  
+@font-face {
+    font-family: "chivo";
+    src: url("../font/Chivo-Black.ttf") format("truetype");
+    font-weight: none;
+    font-style: normal;
+}
+  
+body {
+    font-family: "chivo";
+}
+  
+.logo_site {                /* paramètres du logo du site */
+    height: 75px;
+    padding-top: 7.5px;
+    float: left;
+    width: auto;
+}
+  
+.langue {
+    float: right;
+    width: 45px;
+    margin-right: 50px;
+    transform: translate(0, -30px);
+    border: solid 5px transparent;
+    border-radius: 5px;
+}
+
+.langue:hover {
+    transition: border 0.3s ease;
+    border: solid 5px #FFFFFF;
+}
+  
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: #0F8389;
+    height: 92.5px;
+    width: 100%;
+    font-size: 125%;
+    z-index: 10;
+}
+
+nav li {
+    display: inline-block;
+    padding-top: 35px;
+    padding-right: 70px;
+}
+
+a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: black;
+}
+  
+.on_marche {
+    transition: color 0.3s ease;
+    color: #FFFFFF;
+}
+
+.on_marche:hover {
+    transition: color 0.3s ease;
+    color: #a1a1a1;
+}
+  
+a:hover {
+    transition: color 0.3s ease;
+    color: #FFFFFF;
+}
+
+article {
+    margin: auto;
+    width: 1000px;
+    margin-top: 185px;
+}
+
+p {
+    text-align: center;
+    width: 500px;
+}
+
+.compartiment:nth-child(1) p {
+    transform: translate(400px, -200px);
+}
+
+.compartiment:nth-child(2) p {
+    transform: translate(400px, -250px);
+}
+
+.compartiment:nth-child(3) p {
+    transform: translate(400px, -150px);
+}
+
+.compartiment:nth-child(4) p {
+    width: auto;
+}
+  
+h1 { 
+    text-align : center;
+    margin: 30px;
+    transform: translate(0, 10px);
+}
+
+article img {
+    width: 40%;
+    border: solid 3px #000000;
+    border-radius: 8px;
+}
+
+.compartiment {
+    display: block;
+    margin-left: 50px;
+}
+
+.bloc {
+    display: flex;
+}
+
+footer {
+    background-color: #0F8389;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a:hover {
+    transition: color 0.3s ease;
+    color: #FFFFFF;
+}

@@ -1,0 +1,401 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {                                                    /* initialiser la police d'écriture */
+    font-family: "chivo";
+    src: url("../font/Chivo-Black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* NAV */
+
+body {
+    font-family: "chivo";
+}
+
+.logo_site {                /* paramètres du logo du site */
+    height: 75px;
+    padding-top: 7.5px;
+    float: left;
+}
+
+.langue {                   /* paramètres du logo de langue */
+    float: right;
+    width: 45px;
+    margin-right: 50px;
+    transform: translate(0, -65px);
+    border: solid 5px transparent;
+    border-radius: 5px;
+}
+
+.langue:hover {
+    transition: border 0.3s ease;
+    border: solid 5px #FFFFFF;
+}
+
+nav {                       /* nav */
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: #0F8389;
+    height: 92.5px;
+    font-size: 50%;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transform: translate(0, -35px);
+}
+
+.menu_deroulant {           /* paramètres du menu déroulant */
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 38%;
+    transform: translateX(-50%);
+    background-color: #10acb4;
+    padding: 0;
+    text-align: center;
+    width: 400px;
+    border-radius: 5px;
+    font-size: 35%;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.menu_deroulant li {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    width: 100%;
+    padding: 20px 0;
+}
+
+.menu_deroulant li a {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 90%;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Effet de survol pour les liens du sous-menu */
+.menu_deroulant li a:hover {
+    background-color: #0f8389; /* Change la couleur au survol */
+}
+
+/* Affiche le menu déroulant au survol du bouton Statistiques */
+.deroulant:hover .menu_deroulant {
+    max-height: 500px;
+    padding: 10px 0;  
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+nav li {                    /* boutons du nav */
+    position: relative;
+    font-size: 250%;
+    display: inline-block;
+    padding-top: 70px;
+    padding-right: 70px;
+}
+
+a {                         /* liens du nav */
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: black;
+}
+
+/* effets de survol sur les boutons */
+
+.on_stats {
+    color: #FFFFFF;
+}
+
+.on_stats:hover {
+    transition: color 0.3s ease;
+    color: #a1a1a1;
+}
+
+a:hover {
+    transition: color 0.3s ease;
+    color: #FFFFFF;
+}
+
+footer {
+    background-color: #0F8389;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ARTICLE */
+
+h2 {                    /* taille des textes h2 */
+    font-size: 230%;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+h6 {                    /* taille des textes h6 */
+    font-size: 180%;
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+/* Les matchs */
+
+.les_matchs {           /* aligner les deux parties de la partie Les matchs */
+    display: flex;
+    gap: 40px;
+}
+
+
+/* Tableau */
+
+.poules {               /* paramètres généraux des tableaux de groupes */
+    border: 1px solid black;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 65px;
+    border-collapse: collapse;
+    font-size: 75%;
+    margin-left: 20px;
+}
+
+th {                    /* head des tableaux de groupes */
+    border: 1px solid black;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+td {                    /* cases des tableaux de groupes */
+    border: 1px solid black;
+}
+
+.equipe_tableau {       /* taille de la colonne Équipes */
+    width: 100px;
+}
+
+.qualif_quarts {        /* afficher les équipes qualifiées en quarts */
+    background-color: #d0ffd0;
+}
+
+thead {                 /* changer la couleur de fond de l'en-tête des tableaux de groupes */
+    background-color: #10acb4;
+}
+
+/*Rencontres poules */
+
+.scores {               /* paramètres généraux de l'affichage des scores des phases de poule */
+    border: none;
+    border-collapse: collapse;
+    width: 715px;
+    text-align: center;
+    line-height: 29px;
+    margin-bottom: 110px;
+    margin-top: 55px;
+}
+
+.switch_color {         /* inverser la couleur une ligne sur deux (esthétique) */
+    background-color: #eeeeee;
+}
+
+/* Elimination directe */
+
+.elimination {          /* paramètres généraux du tableau des matchs à élimination directe */
+    font-size: 150%;
+    margin-left: 20px;
+    display: flex;
+    border-collapse: collapse;
+    justify-content: center;
+    margin-bottom: 110px;
+}
+
+.vainqueur_elim {       /* paramètres pour les vainqueurs des matchs */
+    background-color: #eeeeee;
+}
+
+.case_vide {            /* paramètres pour les cases vides du tableau */
+    min-width: 75px;
+    min-height: 80px;
+    border: none;
+}
+
+.finale {               /* paramètres pour les cases des finalistes */
+    min-width: 150px;
+}
+
+.finale_score {         /* paramètres pour le score de la finale */
+    min-width: 75px;
+}
+
+.score_elim {           /* paramètres pour le score des matchs */
+    text-align: center;
+}
+
+.vainqueur {            /* paramètres pour le vainqueur de la compétition */
+    text-align: center;
+    width: 150px;
+}
+
+.vainqueur_texte {      /* paramètres pour indiquer le vainqueur */
+    border: none;
+    text-align: center;
+}
+
+/* Statistiques moyennes et meilleures */
+
+.stats_moyennes {           /* paramètres généraux pour les tableaux de stats moyennes */
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 110px;
+}
+
+.stats_moyennes_points {             /* paramètres généraux pour les points par match */
+    border: none;
+    border-collapse: collapse;
+    width: 25%;
+}
+
+.pts_par_match {        /* paramètres pour le header du tableau points par match */
+    padding: 15px;
+}
+
+.nom_joueur {           /* paramètres pour le nom du joueur */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.stats_moyennes_rebonds {             /* paramètres généraux pour les rebonds par match */
+    border: none;
+    border-collapse: collapse;
+    width: 25%;
+}
+
+.rebonds_par_match {        /* paramètres pour le header du tableau rebonds par match */
+    padding: 15px;
+}
+
+.stats_moyennes_passes {             /* paramètres généraux pour les passes décisives par match */
+    border: none;
+    border-collapse: collapse;
+    width: 25%;
+}
+
+.passes_par_match {        /* paramètres pour le header du tableau passes décisives par match */
+    padding: 15px;
+}
+
+.stats_moyennes_interceptions {             /* paramètres généraux pour les interceptions par match */
+    border: none;
+    border-collapse: collapse;
+    width: 25%;
+}
+
+.interceptions_par_match {        /* paramètres pour le header du tableau interceptions par match */
+    padding: 15px;
+}
+
+.score_stats {             /* paramètres pour les scores des joueurs */
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.meilleures_stats {         /* /* paramètres généraux pour les tableaux de meilleures stats */
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 110px;
+}
+
+.meilleurs_points {             /* paramètres généraux pour les meilleurs points sur un match */
+    border: none;
+    border-collapse: collapse;
+    width: 25%;
+}
+
+.points_sur_match {        /* paramètres pour le header du tableau meilleurs points par match */
+    padding: 15px;
+}
+
+.meilleurs_rebonds {             /* paramètres généraux pour les meilleurs rebonds sur un match */
+    border: none;
+    border-collapse: collapse;
+    width: 25%;
+}
+
+.rebonds_sur_match {        /* paramètres pour le header du tableau meilleurs rebonds par match */
+    padding: 15px;
+}
+
+.meilleurs_passes {             /* paramètres généraux pour les meilleurs passes décisives sur un match */
+    border: none;
+    border-collapse: collapse;
+    width: 25%;
+}
+
+.passes_sur_match {        /* paramètres pour le header du tableau meilleurs passes décisives par match */
+    padding: 15px;
+}
+
+.meilleurs_interceptions {             /* paramètres généraux pour les meilleurs interceptions sur un match */
+    border: none;
+    border-collapse: collapse;
+    width: 25%;
+}
+
+.interceptions_sur_match {        /* paramètres pour le header du tableau meilleurs interceptions par match */
+    padding: 15px;
+}
+
+
+/* Récompenses */
+
+.FIBA_ASF {                       /* paramètres généraux pour le tableau de l'équipe type */
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 110px;
+    width: 850px;
+    height: 175px;
+    line-height: 30px;
+}
+
+.FIBA_ASF th, td {                /* paramètres pour les cases du tableau de l'équipe type */       
+    padding: 15px;
+}
+
+.recompenses_individuelles {     /* paramètres généraux pour le tableau des récompenses individuelles */
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 110px;
+    width: 850px;
+    height: 175px;
+    line-height: 30px;
+}
+
+.recompenses_individuelles th, td {   /* paramètres pour les cases du tableau des récompenses individuelles */       
+    padding: 15px;
+}
